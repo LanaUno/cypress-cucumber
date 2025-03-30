@@ -7,9 +7,10 @@ const {
 
 module.exports = defineConfig({
   nonGlobalStepDefinitions: true,
+  projectId: "e9y4a8",
+  viewportWidth: 1920,
+  viewportHeight: 1080,
   e2e: {
-    viewportWidth: 1920,
-    viewportHeight: 1080,
     specPattern: "**/*.feature",
     setupNodeEvents,
     chromeWebSecurity: false,
