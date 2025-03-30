@@ -17,7 +17,6 @@ const thanksPage = new ThanksPage();
 When("A user open site's home page", () => {
   mainPage.navigate();
 });
-
 Then(/^A user redirected to the page with Thank you message$/, () => {
   thanksPage.validateThanksMessageExist(($message) => {
     expect($message.text()).to.have.string("Thank you.");
