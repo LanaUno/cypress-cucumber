@@ -19,3 +19,11 @@ npx cypress run --record --key 2f4aa9ec-51b8-439b-9fe6-467c563866f4
 or find latest report on Cypress Cloud using the link:
 
 https://cloud.cypress.io/projects/e9y4a8/runs/1/overview?roarHideRunsWithDiffGroupsAndTags=1
+
+9. To run tests in Electron browser use this command in terminal:
+
+npx cypress open --e2e --config-file configs/cypress.electron.config.js
+
+10. To run tests with 1440 x 900 screen resolution use this command:
+
+npx cypress open --e2e --config-file configs/cypress.1440x900.config.js
