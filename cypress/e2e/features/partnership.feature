@@ -1,51 +1,51 @@
 Feature: Testing Become a parnter form
 
   Scenario: Too long Phone Number in Become a Partner Form
-    When A user open site's home page
-    Then A user click Why Telnyx Button
-    Then A user Partners Link
-    Then A user scroll donw to see Become a Partner form
-    Then A user type their First Name
-    Then A user type their Last Name
-    Then A user type Company Name
-    Then A user type their email in the Business Email field
-    Then A user select Country extension number
-    Then A user type too long phone number
-    Then A user choose Partner Type Option
-    Then A user type additional info
-    Then A user click the Submit Button
+    Given A user open site's home page
+    And A user click Why Telnyx Button
+    When A user Partners Link
+    And A user scroll donw to see Become a Partner form
+    And A user type their First Name
+    And A user type their Last Name
+    And A user type Company Name
+    And A user type their email in the Business Email field
+    And A user select Country extension number
+    And A user type too long phone number
+    And A user choose Partner Type Option
+    And A user type additional info
+    And A user click the Submit Button
     Then A user get warning message about phone number length
-    Then Warning message abour phone number length is in red color
+    And A user see warning message abour phone number length is in red color
 
   Scenario: Become a Partner
-    When A user open site's home page
-    Then A user click Why Telnyx Button
-    Then A user Partners Link
-    Then A user scroll donw to see Become a Partner form
-    Then A user type their First Name
-    Then A user type their Last Name
-    Then A user type Company Name
-    Then A user type their email in the Business Email field
-    Then A user select Country extension number
-    Then A user type valid phone number
-    Then A user choose Partner Type Option
-    Then A user type additional info
-    Then A user click the Submit Button
+    Given A user open site's home page
+    And A user click Why Telnyx Button
+    When A user Partners Link
+    And A user scroll donw to see Become a Partner form
+    And A user type their First Name
+    And A user type their Last Name
+    And A user type Company Name
+    And A user type their email in the Business Email field
+    And A user select Country extension number
+    And A user type valid phone number
+    And A user choose Partner Type Option
+    And A user type additional info
+    And A user click the Submit Button
     Then A user redirected to the page with Thank you message
 
   Scenario: Wrong email format in Become a Partner Form
-    When A user open site's home page
-    Then A user click Why Telnyx Button
-    Then A user Partners Link
-    Then A user scroll donw to see Become a Partner form
-    Then A user type their First Name
-    Then A user type their Last Name
-    Then A user type Company Name
-    Then A user type invalid email
-    Then A user select Country extension number
-    Then A user type valid phone number
-    Then A user choose Partner Type Option
-    Then A user type additional info
-    Then A user click the Submit Button
+    Given A user open site's home page
+    And A user click Why Telnyx Button
+    When A user Partners Link
+    And A user scroll donw to see Become a Partner form
+    And A user type their First Name
+    And A user type their Last Name
+    And A user type Company Name
+    And A user type invalid email
+    And A user select Country extension number
+    And A user type valid phone number
+    And A user choose Partner Type Option
+    And A user type additional info
+    And A user click the Submit Button
     Then A user get Error message about invalid email
-    Then Error message about invalid email printed in red
+    And A user see Error message about invalid email printed in red

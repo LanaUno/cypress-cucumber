@@ -1,5 +1,6 @@
-const webpackPreprocessor = require('@cypress/webpack-preprocessor')
+const webpackPreprocessor = require("@cypress/webpack-preprocessor");
 
 module.exports = (on) => {
-  on('file:preprocessor', webpackPreprocessor())
-}
+    on("file:preprocessor", webpackPreprocessor());
+};
+
